@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
     <link rel="stylesheet" href="dist/output.css" />
+    <script>
+      if (localStorage.theme === "dark" || (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
+        document.documentElement.classList.add("dark");
+      } else {
+        document.documentElement.classList.remove("dark");
+      }
+    </script>
   </head>
   <body>
     <!-- Header Awal -->
@@ -23,19 +30,31 @@
             </button>
             <nav
               id="nav-menu"
-              class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none">
+              class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none dark:bg-dark dark:shadow-slate-500 lg:dark:bg-transparent">
               <ul class="block lg:flex">
                 <li class="group">
-                  <a href="#Home" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Beranda</a>
+                  <a href="#Home" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">Beranda</a>
                 </li>
                 <li class="group">
-                  <a href="#About" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Tentang Saya</a>
+                  <a href="#About" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">Tentang Saya</a>
                 </li>
                 <li class="group">
-                  <a href="#Portfolio" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Portfolio</a>
+                  <a href="#Portfolio" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">Portfolio</a>
                 </li>
                 <li class="group">
-                  <a href="#Contact" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Contact</a>
+                  <a href="#Contact" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">Contact</a>
+                </li>
+                <li class="flex items-center pl-8">
+                  <div class="flex">
+                    <span class="mr-2 text-sm text-slate-500">Light</span>
+                    <input type="checkbox" class="hidden" id="dark-toggle" />
+                    <label for="dark-toggle">
+                      <div class="flex h-5 w-9 cursor-pointer items-center rounded-full bg-slate-500 p-1">
+                        <div class="toggle-circle h-4 w-4 rounded-full bg-white transition duration-300 ease-in-out"></div>
+                      </div>
+                    </label>
+                    <span class="ml-2 text-sm text-slate-500">Dark</span>
+                  </div>
                 </li>
               </ul>
             </nav>
@@ -47,12 +66,14 @@
     <!-- Header Akhir -->
 
     <!-- Hero Section Awal -->
-    <section id="Home" class="pt-36">
+    <section id="Home" class="pt-36 dark:bg-dark">
       <div class="container">
         <div class="flex flex-wrap">
           <div class="w-full self-center px-4 lg:w-1/2">
-            <h1 class="text-base font-semibold text-primary md:text-xl">Hello Semua 👋 Saya <span class="block font-bold text-dark text-4xl mt-1 lg:text-5xl">Muhammad Mathori Abdul Jalil</span></h1>
-            <h2 class="font-medium text-secondary text-lg mb-5 lg:text-2xl">Admin | <span class="text-dark">Web Developer</span></h2>
+            <h1 class="text-base font-semibold text-primary md:text-xl">
+              Hello Semua 👋 Saya <span class="block font-bold text-dark text-4xl mt-1 lg:text-5xl dark:text-white">Muhammad Mathori Abdul Jalil</span>
+            </h1>
+            <h2 class="font-medium text-secondary text-lg mb-5 lg:text-2xl">Admin | <span class="text-dark dark:text-white">Web Developer</span></h2>
             <a href="#Contact" class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-90 duration-300 ease-in-out">Hubungi Saya</a>
           </div>
           <div class="w-full self-end px-4 lg:w-1/2">
@@ -76,7 +97,7 @@
 
     <!-- Abaut Section Awal -->
 
-    <section id="About" class="pt-36 pb-32">
+    <section id="About" class="pt-36 pb-32 dark:bg-dark">
       <div class="container">
         <div class="flex flex-wrap">
           <div class="w-fulll px-4 mb-10 lg:w-1/2">
@@ -86,7 +107,7 @@
             </p>
           </div>
           <div class="w-full px-4 lg:w-1/2">
-            <h3 class="font-semibold text-dark text-2xl mb-4 lg:pt-10">Mari Berteman</h3>
+            <h3 class="font-semibold text-dark text-2xl mb-4 lg:pt-10 dark:text-white">Mari Berteman</h3>
             <p class="font-medium text-base text-secondary mb-6 lg:text-lg">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum inventore aperiam eum aliquam recusandae suscipit odit voluptate assumenda quia non.
             </p>
@@ -95,7 +116,7 @@
               <a
                 href="https://instagram.com/mmathori__"
                 target="_blank"
-                class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:border-primary hover:bg-primary hover:text-white">
+                class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:border-primary hover:bg-primary hover:text-white dark:text-white">
                 <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <title>Instagram</title>
                   <path
@@ -106,7 +127,7 @@
               <a
                 href="https://twitter.com/mthor99"
                 target="_blank"
-                class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:border-primary hover:bg-primary hover:text-white">
+                class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:border-primary hover:bg-primary hover:text-white dark:text-white">
                 <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <title>X</title>
                   <path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z" />
@@ -116,7 +137,7 @@
               <a
                 href="https://www.linkedin.com/in/muhammad-mathori-abdul-jalil-551597282/"
                 target="_blank"
-                class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:border-primary hover:bg-primary hover:text-white">
+                class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:border-primary hover:bg-primary hover:text-white dark:text-white">
                 <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <title>LinkedIn</title>
                   <path
@@ -133,12 +154,12 @@
 
     <!-- Portfolio Section Awal -->
 
-    <section id="Portfolio" class="pt-36 pb-16 bg-slate-100">
+    <section id="Portfolio" class="pt-36 pb-16 bg-slate-100 dark:bg-dark">
       <div class="container">
         <div class="w-full px-4">
           <div class="max-w-xl mx-auto text-center mb-16">
             <h4 class="font-semibold text-lg text-primary md-2">Portfolio</h4>
-            <h2 class="font-bold text-dark text-3xl mb-4">My Project</h2>
+            <h2 class="font-bold text-dark text-3xl mb-4 dark:text-white">My Project</h2>
             <p class="font-medium text-md text-secondary">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos cumque asperiores id animi ad autem odio deleniti officia, numquam a at earum voluptatibus magni saepe, minima dicta culpa
               nisi quae.
@@ -150,19 +171,19 @@
             <div class="rounded-md shadow-md overflow-hidden">
               <img src="dist/img/Portfolio/home.png" alt="Sistem Prediksi Penjualan" width="w-full" />
             </div>
-            <h3 class="font-semibold text-xl text-dark mt-5 mb-3 text-center">System Prediksi Penjualan</h3>
+            <h3 class="font-semibold text-xl text-dark mt-5 mb-3 text-center dark:text-white">System Prediksi Penjualan</h3>
           </div>
           <div class="mb-12 p-4 md:w-1/2">
             <div class="rounded-md shadow-md overflow-hidden">
               <img src="dist/img/Portfolio/landing.png" alt="Landing Page" width="w-full" />
             </div>
-            <h3 class="font-semibold text-xl text-dark mt-5 mb-3 text-center">Landing Page</h3>
+            <h3 class="font-semibold text-xl text-dark mt-5 mb-3 text-center dark:text-white">Landing Page</h3>
           </div>
           <div class="mb-12 p-4 md:w-1/2">
             <div class="rounded-md shadow-md overflow-hidden">
               <img src="dist/img/Portfolio/Project-6.png" alt="System Absensi" width="w-full" />
             </div>
-            <h3 class="font-semibold text-xl text-dark mt-5 mb-3 text-center">System Absensi</h3>
+            <h3 class="font-semibold text-xl text-dark mt-5 mb-3 text-center dark:text-white">System Absensi</h3>
           </div>
         </div>
       </div>
@@ -172,12 +193,12 @@
 
     <!-- Contact Section Awal -->
 
-    <section id="Contact" class="pt-36 pb-32">
+    <section id="Contact" class="pt-36 pb-32 dark:bg-dark">
       <div class="container">
         <div class="w-full px-4">
           <div class="max-w-xl mx-auto text-center mb-16">
             <h4 class="font-semibold text-lg text-primary md-2">Contact</h4>
-            <h2 class="font-bold text-dark text-3xl mb-4">Hubungi Saya</h2>
+            <h2 class="font-bold text-dark text-3xl mb-4 dark:text-white">Hubungi Saya</h2>
           </div>
         </div>
         <form>
@@ -240,12 +261,12 @@
             </ul>
             <ul class="text-white">
               <li>
-                <a href="#portfolio" class="inline-block text-base hover:text-primary mb-3">Portfolio</a>
+                <a href="#Portfolio" class="inline-block text-base hover:text-primary mb-3">Portfolio</a>
               </li>
             </ul>
             <ul class="text-white">
               <li>
-                <a href="#contact" class="inline-block text-base hover:text-primary mb-3">Contact</a>
+                <a href="#Contact" class="inline-block text-base hover:text-primary mb-3">Contact</a>
               </li>
             </ul>
           </div>
