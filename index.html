@@ -17,6 +17,7 @@
         document.documentElement.classList.remove("dark");
       }
     </script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   </head>
   <body>
     <!-- Header Awal -->
@@ -172,7 +173,7 @@
             <p class="font-medium text-md text-secondary">Berikut adalah sebuah project yang pernah saya buat</p>
           </div>
         </div>
-        <div class="w-full px-4 flex flex-wrap justify-center xl:w-10/12 xl:mx-auto">
+        <!-- <div class="w-full px-4 flex flex-wrap justify-center xl:w-10/12 xl:mx-auto">
           <div class="mb-12 p-4 md:w-1/2">
             <div class="rounded-md shadow-md overflow-hidden" data-aos="flip-down" data-aos-duration="1000">
               <img src="dist/img/Portfolio/home.png" alt="Sistem Prediksi Penjualan" width="w-full" />
@@ -203,8 +204,40 @@
             </div>
             <h3 class="font-semibold text-xl text-dark mt-5 mb-3 text-center dark:text-white" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">E-Commerce</h3>
           </div>
-        </div>
+        </div> -->
       </div>
+      <swiper-container
+        class="mySwiper"
+        pagination="true"
+        pagination-clickable="true"
+        navigation="true"
+        space-between="30"
+        centered-slides="true"
+        autoplay-delay="2500"
+        autoplay-disable-on-interaction="false">
+        <swiper-slide>
+          <img src="/dist/img/Portfolio/home.png" alt="Sistem Prediksi Penjualan" />
+        </swiper-slide>
+        <swiper-slide>
+          <img src="/dist/img/Portfolio/landing.png" alt="Landing Page" />
+        </swiper-slide>
+        <swiper-slide>
+          <img src="/dist/img/Portfolio/Project-6.png" alt="Sistem Absensi" />
+        </swiper-slide>
+        <swiper-slide>
+          <img src="/dist/img/Portfolio/wedding.png" alt="Wedding Invitation" />
+        </swiper-slide>
+        <swiper-slide>
+          <img src="/dist/img/Portfolio/e-commerce.png" alt="E-Commerce" />
+        </swiper-slide>
+
+        <div class="autoplay-progress" slot="container-end">
+          <svg viewBox="0 0 48 48">
+            <circle cx="24" cy="24" r="20"></circle>
+          </svg>
+          <span></span>
+        </div>
+      </swiper-container>
     </section>
     <!-- Portfolio Section Akhir -->
 
@@ -350,6 +383,7 @@
       gsap.registerPlugin(TextPlugin);
       gsap.to(".lead", { duration: 1.5, delay: 1.5, text: "Admin | Web Developer" });
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
     <script src="dist/js/script.js"></script>
   </body>
 </html>
