@@ -1225,15 +1225,17 @@ body {
   --tw-shadow: var(--tw-shadow-colored);
 }
 
+/* swiper */
+
 swiper-container {
-  width: 80%;
-  height: 80%;
+  width: 100%;
+  height: 100%;
 }
 
 swiper-slide {
   text-align: center;
   font-size: 18px;
-  background: #fff;
+  background: var(--tw-backdrop-grayscale);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1246,34 +1248,44 @@ swiper-slide img {
   object-fit: cover;
 }
 
-.autoplay-progress {
-  position: absolute;
-  right: 16px;
-  bottom: 16px;
-  z-index: 10;
-  width: 48px;
-  height: 48px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: bold;
-  color: var(--swiper-theme-color);
+swiper-container {
+  width: 100%;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.autoplay-progress svg {
-  --progress: 0;
-  position: absolute;
-  left: 0;
-  top: 0px;
-  z-index: 10;
+swiper-slide {
+  background-size: cover;
+  background-position: center;
+}
+
+.mySwiper {
+  height: 80%;
   width: 100%;
+}
+
+.mySwiper2 {
+  height: 20%;
+  box-sizing: border-box;
+  padding: 10px 0;
+}
+
+.mySwiper2 swiper-slide {
+  width: 25%;
   height: 100%;
-  stroke-width: 4px;
-  stroke: var(--swiper-theme-color);
-  fill: none;
-  stroke-dashoffset: calc(125.6 * (1 - var(--progress)));
-  stroke-dasharray: 125.6;
-  transform: rotate(-90deg);
+  opacity: 0.4;
+}
+
+.mySwiper2 .swiper-slide-thumb-active {
+  opacity: 1;
+}
+
+swiper-slide img {
+  display: block;
+  width: 80%;
+  height: 80%;
+  object-fit: cover;
 }
 @media (min-width: 768px) {
   .md\:w-1\/2 {
