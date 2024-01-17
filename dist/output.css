@@ -1283,8 +1283,8 @@ swiper-slide {
 
 swiper-slide img {
   display: block;
-  width: 80%;
-  height: 80%;
+  width: 50%;
+  height: 50%;
   object-fit: cover;
 }
 @media (min-width: 768px) {
