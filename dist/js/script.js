@@ -15,19 +15,19 @@ window.onscroll = function () {
   }
 };
 
-//kotak
-const kotak = document.querySelector("#kotak");
+//hamburger
+const hamburger = document.querySelector("#hamburger");
 const navMenu = document.querySelector("#nav-menu");
 
-kotak.addEventListener("click", function () {
-  kotak.classList.toggle("kotak-active");
+hamburger.addEventListener("click", function () {
+  hamburger.classList.toggle("hamburger-active");
   navMenu.classList.toggle("hidden");
 });
 
-//klik di luar kotak
+//klik di luar hamburger
 window.addEventListener("click", function (e) {
-  if (e.target != kotak && e.target != navMenu) {
-    kotak.classList.remove("kotak-active");
+  if (e.target != hamburger && e.target != navMenu) {
+    hamburger.classList.remove("hamburger-active");
     navMenu.classList.add("hidden");
   }
 });

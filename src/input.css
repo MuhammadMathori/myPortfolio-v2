@@ -4,29 +4,26 @@
 
 body {
   font-family: "Inter", sans-serif;
-  overflow: hidden !important;
-  overflow-x: hidden !important;
-  max-width: 100% !important;
 }
 
 .navbar-fixed {
-  @apply fixed z-[9999] bg-white bg-opacity-60 backdrop-blur-sm dark:bg-dark dark:bg-opacity-75;
-  box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.1);
+  @apply fixed z-[9999] bg-white bg-opacity-70 backdrop-blur-sm dark:bg-dark dark:bg-opacity-50;
+  box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.2);
 }
 
-.kotak-line {
-  @apply w-[30px] h-[2px] my-2 block bg-black dark:bg-white;
+.hamburger-line {
+  @apply my-2 block h-[2px] w-[30px] bg-dark dark:bg-white;
 }
 
-.kotak-active > span:nth-child(1) {
+.hamburger-active > span:nth-child(1) {
   @apply rotate-45;
 }
 
-.kotak-active > span:nth-child(2) {
+.hamburger-active > span:nth-child(2) {
   @apply scale-0;
 }
 
-.kotak-active > span:nth-child(3) {
+.hamburger-active > span:nth-child(3) {
   @apply -rotate-45;
 }
 

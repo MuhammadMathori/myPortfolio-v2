@@ -6,7 +6,7 @@
     <!-- AOS -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Portfolio</title>
-    <link rel="stylesheet" href="dist/output.css" />
+    <link rel="stylesheet" href="dist/css/final.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Playball&family=Work+Sans:wght@100;400;600;700&display=swap" rel="stylesheet" />
@@ -28,10 +28,10 @@
             <h1 class="font-bold text-lg dark:text-white block py-6">MuhammadMa<span class="text-primary">thori</span></h1>
           </div>
           <div class="flex items-center px-4">
-            <button id="kotak" name="kotak" type="button" class="block absolute right-4 lg:hidden">
-              <span class="kotak-line transition duration-300 ease-in-out origin-top-left"></span>
-              <span class="kotak-line transition duration-300 ease-in-out"></span>
-              <span class="kotak-line transition duration-300 ease-in-out origin-bottom-left"></span>
+            <button id="hamburger" name="hamburger" type="button" class="absolute right-4 block lg:hidden">
+              <span class="hamburger-line origin-top-left transition duration-300 ease-in-out"></span>
+              <span class="hamburger-line transition duration-300 ease-in-out"></span>
+              <span class="hamburger-line origin-bottom-left transition duration-300 ease-in-out"></span>
             </button>
             <nav
               id="nav-menu"
@@ -42,6 +42,9 @@
                 </li>
                 <li class="group">
                   <a href="#About" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">Tentang Saya</a>
+                </li>
+                <li class="group">
+                  <a href="#Skill" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">Skill</a>
                 </li>
                 <li class="group">
                   <a href="#Portfolio" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">Portfolio</a>
@@ -80,17 +83,17 @@
             </h1>
             <h2 class="lead font-medium text-secondary text-lg mb-5 lg:text-2xl"></h2>
             <div data-aos="fade-up" data-aos-duration="2000" data-aos-delay="2000">
-              <a href="#Contact" class="z-15 text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-90 duration-300 ease-in-out">Hubungi Saya</a>
+              <a href="#Contact" class="z-15 text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 duration-300 ease-in-out">Hubungi Saya</a>
             </div>
           </div>
           <div class="w-full self-end px-4 lg:w-1/2">
-            <div class="relative mt-10 lg:mt-9 lg:right-0">
-              <img src="dist/img/PP_Thori3.png" alt="Thori" class="relative z-10 max-w-full mx-auto" />
-              <span class="absolute -bottom-0 left-1/2 -translate-x-1/2 md:scale-125">
-                <svg width="300" height="350" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <div class="relative mt-10 lg:right-0 lg:mt-9">
+              <img src="dist/img/PP-thori2-removebg-preview.png" alt="Sandhika Galih" class="relative z-10 mx-auto max-w-full" />
+              <span class="absolute bottom-0 left-1/2 -translate-x-1/2 md:scale-125">
+                <svg width="350" height="300" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
                   <path
                     fill="#14b8a6"
-                    d="M67.3,-14.9C76.6,6.9,66.4,42.1,45.5,55.6C24.6,69.1,-6.9,61,-31.9,43.1C-56.9,25.1,-75.3,-2.7,-68.9,-20.4C-62.5,-38.2,-31.2,-46,-1.1,-45.6C29,-45.2,57.9,-36.7,67.3,-14.9Z"
+                    d="M47.4,-51C59.2,-35.6,65.1,-17.8,63.4,-1.7C61.7,14.5,52.6,28.9,40.8,36.6C28.9,44.2,14.5,45,-2,47C-18.4,49,-36.8,52.1,-45.4,44.5C-53.9,36.8,-52.5,18.4,-51.2,1.3C-49.9,-15.8,-48.7,-31.7,-40.2,-47.1C-31.7,-62.4,-15.8,-77.3,1,-78.3C17.8,-79.2,35.6,-66.3,47.4,-51Z"
                     transform="translate(100 100) scale(1.1)" />
                 </svg>
               </span>
@@ -165,6 +168,66 @@
     </section>
     <!-- Abaut Section Akhir -->
 
+    <!-- Skill Section Awal -->
+    <!-- <section id="skill" class="pt-36 pb-16 bg-slate-100 dark:bg-dark">
+      <div class="container">
+        <div class="w-full px-4">
+          <div class="max-w-xl mx-auto text-center mb-16" data-aos="fade-down" data-aos-duration="1000">
+            <h4 class="font-semibold text-lg text-primary md-2">Skill</h4>
+            <h2 class="font-bold text-dark text-3xl mb-4 dark:text-white">My Skill</h2>
+            <p class="font-medium text-md text-secondary">Berikut adalah skill yang pernah saya pelajari</p>
+          </div>
+        </div>
+
+        <div class="w-full px-4">
+          <div class="flex flex-wrap items-center justify-center">
+            <a href="" class="max-w-[120px] mx-4 my-4 grayscale-1">
+              <img src="dist/img/skill/html.svg" alt="html" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <section id="Skill" class="bg-slate-100 pt-36 pb-32 dark:bg-dark">
+      <div class="container">
+        <div class="w-full px-4">
+          <div class="mx-auto mb-16 text-center">
+            <div data-aos="fade-down" data-aos-duration="1000">
+              <h4 class="mb-2 text-lg font-semibold text-primary">Skill</h4>
+              <h2 class="mb-4 text-3xl font-bold text-black dark:text-white sm:text-4xl lg:text-5xl">My Skill</h2>
+              <p class="text-md font-medium text-secondary md:text-lg">Berikut adalah skill yang pernah saya pelajari</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="w-full px-4" data-aos="fade-zoom-in">
+          <div class="flex flex-wrap items-center justify-center">
+            <a href="https://www.w3schools.com/html/" class="mx-4 max-w-[120px] py-4 opacity-60 grayscale transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8">
+              <img src="dist/img/skill/html5.png" alt="Google" />
+            </a>
+            <a href="https://www.w3schools.com/css/" class="mx-4 max-w-[120px] py-4 opacity-60 grayscale transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8">
+              <img src="dist/img/skill/css-logo.png" alt="Gojek" />
+            </a>
+            <a href="https://www.w3schools.com/js/" class="mx-4 max-w-[120px] py-4 opacity-60 grayscale transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8">
+              <img src="dist/img/skill/JavaScript-logo (1).png" alt="Tokopedia" />
+            </a>
+            <a href="https://getbootstrap.com/" class="mx-4 max-w-[120px] py-4 opacity-60 grayscale transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8">
+              <img src="dist/img/skill/bootstrap-5-logo-icon.png" alt="traveloka" />
+            </a>
+            <a href="https://www.php.net/" class="mx-4 max-w-[120px] py-4 opacity-60 grayscale transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8">
+              <img src="dist/img/skill/php-logo-png-transparent-svg-vector-bie-supply-1.png" alt="traveloka" />
+            </a>
+            <a href="https://laravel.com/" class="mx-4 max-w-[120px] py-4 opacity-60 grayscale transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8">
+              <img src="dist/img/skill/laravel-logo-41EC1D4C3F-seeklogo.com.png" alt="traveloka" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skill Section Akhir -->
+
     <!-- Portfolio Section Awal -->
     <section id="Portfolio" class="pt-36 pb-16 bg-slate-100 dark:bg-dark">
       <div class="container">
@@ -175,83 +238,101 @@
             <p class="font-medium text-md text-secondary">Berikut adalah sebuah project yang pernah saya buat</p>
           </div>
         </div>
-        <!-- <div class="w-full px-4 flex flex-wrap justify-center xl:w-10/12 xl:mx-auto">
+        <div class="w-full px-4 flex flex-wrap justify-center xl:w-10/12 xl:mx-auto">
           <div class="mb-12 p-4 md:w-1/2">
             <div class="rounded-md shadow-md overflow-hidden" data-aos="flip-down" data-aos-duration="1000">
-              <img src="dist/img/Portfolio/home.png" alt="Sistem Prediksi Penjualan" width="w-full" />
+              <a href="https://github.com/MuhammadMathori/perpustakaan">
+                <img src="dist/img/Portfolio/sirebu.png" class="hover:opacity-80 hover:shadow-lg transition duration-500" alt="Sistem Prediksi Penjualan" width="w-full" />
+              </a>
+            </div>
+            <h3 class="font-semibold text-xl text-dark mt-5 mb-3 text-center dark:text-white" data-aos="fade-up" data-aos-duration="1000">System Rental Buku</h3>
+          </div>
+          <div class="mb-12 p-4 md:w-1/2">
+            <div class="rounded-md shadow-md overflow-hidden" data-aos="flip-down" data-aos-duration="1000" data-aos-delay="100">
+              <a href="https://github.com/MuhammadMathori/sistemprediksi">
+                <img src="dist/img/Portfolio/home.png" class="hover:opacity-80 hover:shadow-lg transition duration-500" alt="Sistem Prediksi Penjualan" width="w-full" />
+              </a>
             </div>
             <h3 class="font-semibold text-xl text-dark mt-5 mb-3 text-center dark:text-white" data-aos="fade-up" data-aos-duration="1000">System Prediksi Penjualan</h3>
           </div>
           <div class="mb-12 p-4 md:w-1/2">
             <div class="rounded-md shadow-md overflow-hidden" data-aos="flip-down" data-aos-duration="1000" data-aos-delay="100">
-              <img src="dist/img/Portfolio/landing.png" alt="Landing Page" width="w-full" />
+              <a href="https://muhammadmathori.github.io/">
+                <img src="dist/img/Portfolio/landing.png" class="hover:opacity-80 hover:shadow-lg transition duration-500" alt="Landing Page" width="w-full" />
+              </a>
             </div>
             <h3 class="font-semibold text-xl text-dark mt-5 mb-3 text-center dark:text-white" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">Landing Page</h3>
           </div>
           <div class="mb-12 p-4 md:w-1/2">
             <div class="rounded-md shadow-md overflow-hidden" data-aos="flip-down" data-aos-duration="1000" data-aos-delay="300">
-              <img src="dist/img/Portfolio/Project-6.png" alt="System Absensi" width="w-full" />
+              <img src="dist/img/Portfolio/Project-6.png" class="hover:opacity-80 hover:shadow-lg transition duration-500" alt="System Absensi" width="w-full" />
             </div>
             <h3 class="font-semibold text-xl text-dark mt-5 mb-3 text-center dark:text-white" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">System Absensi</h3>
           </div>
           <div class="mb-12 p-4 md:w-1/2">
             <div class="rounded-md shadow-md overflow-hidden" data-aos="flip-down" data-aos-duration="1000" data-aos-delay="300">
-              <img src="dist/img/Portfolio/wedding.png" alt="wedding" width="w-full" />
+              <a href="https://muhammadmathori.github.io/wedding/">
+                <img src="dist/img/Portfolio/wedding.png" class="hover:opacity-80 hover:shadow-lg transition duration-500" alt="wedding" width="w-full" />
+              </a>
             </div>
             <h3 class="font-semibold text-xl text-dark mt-5 mb-3 text-center dark:text-white" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">Wedding Invitation</h3>
           </div>
           <div class="mb-12 p-4 md:w-1/2">
             <div class="rounded-md shadow-md overflow-hidden" data-aos="flip-down" data-aos-duration="1000" data-aos-delay="300">
-              <img src="dist/img/Portfolio/e-commerce.png" alt="e-commerce" width="w-full" />
+              <a href="https://github.com/MuhammadMathori/teafamily">
+                <img src="dist/img/Portfolio/e-commerce.png" class="hover:opacity-80 hover:shadow-lg transition duration-500" alt="e-commerce" width="w-full" />
+              </a>
             </div>
             <h3 class="font-semibold text-xl text-dark mt-5 mb-3 text-center dark:text-white" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">E-Commerce</h3>
           </div>
-        </div> -->
+        </div>
       </div>
-      <swiper-container
-        style="--swiper-navigation-color: grey; --swiper-pagination-color: #fff"
-        class="mySwiper"
-        autoplay-delay="2500"
-        thumbs-swiper=".mySwiper2"
-        loop="false"
-        space-between="10"
-        data-aos="fade-zoom-in"
-        data-aos-easing="ease-in-back"
-        data-aos-delay="300"
-        data-aos-offset="0">
-        <swiper-slide>
-          <img src="dist/img/Portfolio/home.png" />
-        </swiper-slide>
-        <swiper-slide>
-          <img src="dist/img/Portfolio/landing.png" />
-        </swiper-slide>
-        <swiper-slide>
-          <img src="dist/img/Portfolio/Project-6.png" />
-        </swiper-slide>
-        <swiper-slide>
-          <img src="dist/img/Portfolio/wedding.png" />
-        </swiper-slide>
-        <swiper-slide>
-          <img src="dist/img/Portfolio/e-commerce.png" />
-        </swiper-slide>
-      </swiper-container>
-      <swiper-container class="mySwiper2" space-between="10" slides-per-view="4" free-mode="true" watch-slides-progress="true">
-        <swiper-slide>
-          <img src="dist/img/Portfolio/home.png" />
-        </swiper-slide>
-        <swiper-slide>
-          <img src="dist/img/Portfolio/landing.png" />
-        </swiper-slide>
-        <swiper-slide>
-          <img src="dist/img/Portfolio/Project-6.png" />
-        </swiper-slide>
-        <swiper-slide>
-          <img src="dist/img/Portfolio/wedding.png" />
-        </swiper-slide>
-        <swiper-slide>
-          <img src="dist/img/Portfolio/e-commerce.png" />
-        </swiper-slide>
-      </swiper-container>
+      <!-- <div class="w-full px-4">
+        <swiper-container
+          style="--swiper-navigation-color: grey; --swiper-pagination-color: #fff"
+          class="mySwiper"
+          autoplay-delay="2500"
+          thumbs-swiper=".mySwiper2"
+          loop="false"
+          space-between="10"
+          data-aos="fade-zoom-in"
+          data-aos-easing="ease-in-back"
+          data-aos-delay="300"
+          data-aos-offset="0">
+          <swiper-slide>
+            <img src="dist/img/Portfolio/home.png" />
+          </swiper-slide>
+          <swiper-slide>
+            <img src="dist/img/Portfolio/landing.png" />
+          </swiper-slide>
+          <swiper-slide>
+            <img src="dist/img/Portfolio/Project-6.png" />
+          </swiper-slide>
+          <swiper-slide>
+            <img src="dist/img/Portfolio/wedding.png" />
+          </swiper-slide>
+          <swiper-slide>
+            <img src="dist/img/Portfolio/e-commerce.png" />
+          </swiper-slide>
+        </swiper-container>
+        <swiper-container class="mySwiper2" space-between="10" slides-per-view="4" free-mode="true" watch-slides-progress="true">
+          <swiper-slide>
+            <img src="dist/img/Portfolio/home.png" />
+          </swiper-slide>
+          <swiper-slide>
+            <img src="dist/img/Portfolio/landing.png" />
+          </swiper-slide>
+          <swiper-slide>
+            <img src="dist/img/Portfolio/Project-6.png" />
+          </swiper-slide>
+          <swiper-slide>
+            <img src="dist/img/Portfolio/wedding.png" />
+          </swiper-slide>
+          <swiper-slide>
+            <img src="dist/img/Portfolio/e-commerce.png" />
+          </swiper-slide>
+        </swiper-container>
+      </div> -->
     </section>
     <!-- Portfolio Section Akhir -->
 
@@ -284,7 +365,7 @@
                   class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary h-40"></textarea>
               </div>
               <div class="w-full px-4">
-                <button class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full w-full hover:opacity-75 hover:shadow-lg transition duration-500">Kirim</button>
+                <button class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full w-full hover:opacity-80 hover:shadow-lg transition duration-500">Kirim</button>
               </div>
             </div>
           </form>
@@ -299,7 +380,7 @@
         <div class="flex flex-wrap">
           <div class="w-full px-5 mb-12 text-slate-300 font-medium md:w-1/3">
             <h3 class="font-bold text-2xl mb-5">Hubungi Saya</h3>
-            <p class="text-sm">mathorimuhammad449@gmail.com</p>
+            <p class="text-sm lg:text-lg">mathorimuhammad449@gmail.com</p>
             <p>Jl Sunan Giri Gg Beringin Jaya</p>
             <p>No 10A Lamongan</p>
           </div>
@@ -310,7 +391,6 @@
             <p>Bootstrap</p>
             <p>MySQL</p>
             <p>PHP Laravel</p>
-            <p>Microsoft Office</p>
           </div>
           <div class="w-full px-5 mb-12 text-slate-300 font-medium md:w-1/3">
             <h3 class="font-semibold text-xl mb-5">Tautan</h3>
@@ -325,6 +405,9 @@
               </li>
             </ul>
             <ul class="text-white">
+              <li>
+                <a href="#Skill" class="inline-block text-base hover:text-primary mb-3">Skill</a>
+              </li>
               <li>
                 <a href="#Portfolio" class="inline-block text-base hover:text-primary mb-3">Portfolio</a>
               </li>
